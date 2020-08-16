@@ -35,7 +35,6 @@
 .glider-contain {
     width: 100%;
     margin-left: 10%;
-    position: relative;
 }
 
 .course-card {
@@ -46,24 +45,22 @@
     align-items: center;
     flex-direction: column;
     margin: 5px;
-    // width: 330px;
+    width: 330px;
     border-radius: 3px;
     overflow: hidden;
 
     .course-top {
-        position: relative;
-
         img {
             max-width: 100%;
         }
     }
 
     .course-bottom {
-        position: relative;
-
         >div {
             display: flex;
             justify-content: space-between;
+            padding: 5px;
+            margin: 5px;
         }
 
         .tag {
