@@ -1,0 +1,45 @@
+/*------------------------------
+        NavBar
+------------------------------*/
+
+header {
+    background-color: transparent;
+    height: 100vh;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    background-color: transparent;
+
+    .logo {
+        width: 70px;
+    }
+
+    .nav-item {
+        a {
+            font-size: 1.2rem;
+        }
+    }
+
+    form {
+        .btn {
+            color: #fff;
+        }
+    }
+
+    .sign {
+        margin-right: .25em;
+
+        .sign-up {
+            padding: 5px;
+            border: 2px solid #F6425F;
+            margin: 0 1.25em;
+        }
+
+        .sign-in,
+        .sign-up {
+            color: #fff;
+            margin: 0 5px;
+        }
+    }
+}

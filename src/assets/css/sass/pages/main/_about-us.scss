@@ -1,0 +1,121 @@
+/*------------------------------
+        About us
+------------------------------*/
+
+.about-us-main {
+    height: 100vh;
+    padding-top: 75px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        width: 50%;
+        height: 120px;
+        position: absolute;
+        bottom: -80px;
+        left: 0;
+        transform: skewY(8deg);
+    }
+
+    &::after {
+        content: "";
+        width: 50%;
+        height: 120px;
+        position: absolute;
+        bottom: -80px;
+        right: 0;
+        transform: skewY(-8deg);
+    }
+
+    &::before, &::after {
+        background: grey;
+        opacity: .3;
+    }
+}
+
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: right;
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    a {
+        border-bottom: 1px solid #F88191;
+        font-size: 1.2rem;
+    }
+}
+
+.about-info {
+    display: flex;
+    justify-content: space-between;
+
+    .about-info-box {
+        box-shadow: 0px 0px 10px -1px rgba(213, 197, 197, .75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 5px;
+        height: 250px;
+        width: 190px;
+
+        p {
+            font-size: 1.07rem;
+            color: grey;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 10px -1px rgba(248, 129, 145, .75);
+        }
+    }
+
+    .left {
+        margin-bottom: -50px;
+    }
+
+    div {
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        >* {
+            padding: 5px;
+        }
+    }
+}
+
+.first-box {
+    margin-bottom: 7.5px;
+
+    i {
+        color: #66CA90;
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+.third-box {
+    img {
+        width: 70px;
+    }
+}
