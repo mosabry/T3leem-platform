@@ -7,6 +7,7 @@ concat = require("gulp-concat");
 uglify = require("gulp-uglify");
 imagemin = require("gulp-imagemin");
 livereload = require("gulp-livereload");
+zip = require('gulp-zip');
 
 // HTML Task
 gulp.task("html", () => {
@@ -42,13 +43,11 @@ gulp.task("js", () => {
         .pipe(livereload());
 });
 
-// Image Task
-gulp.task('image', (done) => {
-    gulp.src('./src/assets/img/**/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('./dist/assets/img'))
-        .pipe(livereload())
-    done();
+// Compress Files
+gulp.task('compress', () => {
+    return gulp.src('dist/**/*.*')
+        .pipe(zip('website.zip'))
+        .pipe(gulp.dest('.'))
 })
 
 // Watch Task
@@ -58,5 +57,5 @@ gulp.task("watch", () => {
     gulp.watch("./src/*.html", gulp.series("html"));
     gulp.watch("./src/assets/css/**/*.scss", gulp.series("css"));
     gulp.watch("./src/assets/js/*.js", gulp.series("js"));
-    gulp.watch('./src/assets/img/*', gulp.series('image'));
+    gulp.watch('dist/**/*.*', gulp.series('compress'))
 });

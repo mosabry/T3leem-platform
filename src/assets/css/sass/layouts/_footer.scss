@@ -1,0 +1,54 @@
+/*------------------------------
+        Footer
+------------------------------*/
+.footer {
+    height: 100vh;
+    overflow: hidden;
+}
+
+footer {
+    background: linear-gradient(rgb(104, 113, 204), rgb(71, 82, 198));
+    position: relative;
+    padding-top: 75px;
+    color: #fff;
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: aquamarine;
+        }
+    }
+}
+
+footer:before {
+    content: "";
+    position: absolute;
+    top: -55px;
+    height: 60px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right bottom, transparent 49%, rgb(104, 113, 204) 50%);
+}
+
+.social-icons {
+    padding-top: 15px;
+
+    a {
+        margin: 5px;
+    }
+}
+
+
+.copyright {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        li {
+            margin-right: 20px;
+        }
+    }
+}

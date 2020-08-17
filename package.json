@@ -18,7 +18,8 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-strip-comments": "^2.5.2",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.0.2"
   },
   "dependencies": {
     "static-server": "^2.2.1"
