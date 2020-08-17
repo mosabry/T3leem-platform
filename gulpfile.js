@@ -47,7 +47,7 @@ gulp.task("js", () => {
 gulp.task('compress', () => {
     return gulp.src('dist/**/*.*')
         .pipe(zip('website.zip'))
-        .pipe(gulp.dest('.'))
+        .pipe(gulp.dest('./compressed'))
 })
 
 // Watch Task

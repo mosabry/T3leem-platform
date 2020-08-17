@@ -1,2 +1,4 @@
 node_modules
+compressed
 package-lock.json
+*.zip
