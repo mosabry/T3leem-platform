@@ -3,7 +3,7 @@ new WOW().init();
 
 /* Initialize Gliderjs */
 window.addEventListener("load", function () {
-    new Glider(document.querySelector(".glider"), {
+    /* new Glider(document.querySelector(".glider"), {
         slidesToShow: 3,
         slidesToScroll: 1,
         draggable: true,
@@ -12,6 +12,17 @@ window.addEventListener("load", function () {
             prev: ".glider-prev",
             next: ".glider-next",
         },
+    }); */
+
+    new Glider(document.querySelector('.glider'), {
+        slidesToScroll: 1,
+        slidesToShow: 3.5,
+        draggable: true,
+        dots: '.dots',
+        // arrows: {
+        //     prev: '.glider-prev',
+        //     next: '.glider-next'
+        // }
     });
 });
 
@@ -19,7 +30,7 @@ window.addEventListener("load", function () {
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     $(".zoom").css({
-        backgroundSize: (100 + scroll / 5) + "%",
+        backgroundSize: 100 + scroll / 5 + "%",
         top: -(scroll / 10) + "%",
 
         //Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments

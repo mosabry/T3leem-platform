@@ -1,0 +1,29 @@
+.course-section {
+    height: auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    overflow: hidden;
+
+}
+
+.glider-containe {
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    .glider {
+        position: relative;
+
+        .glider-next, .glider-prev {
+            top: 44% !important;
+        }
+
+        a {
+            background-color: rgb(185, 42, 142);
+            box-shadow: 0px 0px 10px -1px rgba(248, 129, 145, .75);
+            color: aliceblue;
+            margin: 0 5px;
+            padding: 40px;
+        }
+    }
+}
