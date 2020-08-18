@@ -11,6 +11,10 @@ header {
 .navbar {
     background-color: transparent;
 
+    @media all and (max-width: 991px) {
+        background-color: #68b0ab;
+    }
+
     .logo {
         width: 70px;
     }
@@ -18,6 +22,10 @@ header {
     .nav-item {
         a {
             font-size: 1.2rem;
+
+            @media all and (max-width: 991px) {
+                color: #fff !important;
+            }
         }
     }
 
@@ -25,6 +33,14 @@ header {
         .btn {
             color: #fff;
         }
+
+        @media all and (max-width: 1200px) {
+            .form-control {
+                width: 200px;
+            }
+
+        }
+
     }
 
     .sign {

@@ -27,12 +27,20 @@ header {
 
         p {
             font-size: 1.55rem;
-            color: #F6425F;   
+            color: #F6425F;
+
+            @media all and (max-width: 768px) {
+                font-size: .9rem;
+            }
         }
 
         h2 {
             color: #382933;
             font-size: 3rem;
+
+            @media all and (max-width: 768px) {
+                font-size: 1.5rem;
+            }
         }
 
 

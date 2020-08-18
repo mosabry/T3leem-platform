@@ -4,6 +4,10 @@
     background-size: 50% 100%;
     background-position: left top, right top;
     background-attachment: unset;
+
+    @media all and (max-width: 991px) {
+        background-size: 100% 100%;
+    }
 }
 
 .nav-course {
@@ -12,13 +16,36 @@
 
 .sign-course {
     color: #000 !important;
+
+    @media all and (max-width: 991px) {
+        color: #fff !important;
+    }
 }
 
 .hero-course {
+    position: relative;
+
     .container {
         height: 90vh;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+    }
+
+    @media all and (max-width: 991px) {
+        .hero-text {
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            .hero-buttons {
+                a {
+                    color: #fff;
+                }
+            }
+        }
     }
 }

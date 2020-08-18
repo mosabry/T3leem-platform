@@ -17,9 +17,19 @@
         margin: 2%;
         overflow: hidden;
         max-width: 540px;
+        box-shadow: 0px 0px 10px -1px rgba(248, 129, 145, .75);
 
         &:hover .item-overlay.top {
             top: 0;
+        }
+
+        &:hover h3 {
+            display: none;
+        }
+
+        h3 {
+            color: #F6425F;
+            padding: 15px 0;
         }
 
         img {

@@ -9,9 +9,19 @@
     position: relative;
     background-color: rgba(128, 128, 128, 0.3);
 
+    @media all and (max-width: 768px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
     h1 {
         span {
             font-weight: 700;
+        }
+
+        @media all and (max-width: 768px) {
+            font-size: 1.5rem;
+            text-align: center;
         }
     }
 
@@ -20,14 +30,30 @@
         justify-content: space-between;
         padding-bottom: 75px;
 
+        @media all and (max-width: 768px) {
+            padding-bottom: 35px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
         p {
             font-size: 1.2rem;
+
+            @media all and (max-width: 768px) {
+                font-size: 0.80rem;
+            }
         }
 
         a {
             border-bottom: 1px solid #F88191;
             font-size: 1.4rem;
             align-self: flex-end;
+
+            @media all and (max-width: 768px) {
+                font-size: 0.08rem;
+                align-self: center;
+            }
         }
     }
 }
@@ -72,6 +98,10 @@
             margin-top: 5px;
             margin-bottom: 5px;
             padding: 5px 28px;
+        }
+
+        .tag-open {
+            background-color: #17a2b8;
         }
 
         .stars {
