@@ -8,6 +8,10 @@
     position: relative;
     overflow: hidden;
 
+    @media all and (max-width: 1420px) {
+        padding-top: 35px;
+    }
+
     @media all and (max-width: 768px) {
         padding-top: 20px;
     }
@@ -15,9 +19,7 @@
     &::before {
         content: "";
         width: 50%;
-        height: 120px;
         position: absolute;
-        bottom: -80px;
         left: 0;
         transform: skewY(8deg);
     }
@@ -25,9 +27,7 @@
     &::after {
         content: "";
         width: 50%;
-        height: 120px;
         position: absolute;
-        bottom: -80px;
         right: 0;
         transform: skewY(-8deg);
     }
@@ -35,6 +35,8 @@
     &::before, &::after {
         background: grey;
         opacity: .3;
+        height: 150px;
+        bottom: -82px;
 
         @media all and (max-width: 768px) {
             bottom: -102px;
@@ -110,6 +112,11 @@
             width: 130px;
         }
 
+        @media all and (max-width: 768px) {
+            height: 150px;
+            width: 135px;
+        }
+
         p {
             font-size: 1.07rem;
             color: grey;
@@ -139,6 +146,14 @@
             padding: 5px;
         }
     }
+
+    h3 {
+        font-size: 1.5rem;
+
+        @media all and (max-width: 768px) {
+            font-size: 1.2rem;
+        }
+    }
 }
 
 .first-box {
@@ -152,14 +167,22 @@
             font-size: 30px;
         }
     }
-
-    h3 {
-        font-size: 1.5rem;
-    }
 }
 
 .third-box {
     img {
         width: 70px;
+
+        @media all and (max-width: 768px) {
+            width: 50px;
+        }
+    }
+}
+
+.fourth-box {
+    img {
+        @media all and (max-width: 768px) {
+            width: 50px;
+        }
     }
 }
