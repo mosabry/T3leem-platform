@@ -11,13 +11,24 @@ window.addEventListener("load", function () {
         duration: 0.25,
         responsive: [
             {
-                // screens greater than >= 775px
+                // screens greater than >= 120px
+                breakpoint: 120,
+                settings: {
+                    // Set to `auto` and provide item width to adjust to viewport
+                    slidesToShow: '1',
+                    slidesToScroll: '1',
+                    itemWidth: 50,
+                    duration: 0.25
+                }
+            },
+            {
+                // screens greater than >= 440px
                 breakpoint: 440,
                 settings: {
                     // Set to `auto` and provide item width to adjust to viewport
                     slidesToShow: '1.5',
                     slidesToScroll: '1',
-                    itemWidth: 150,
+                    itemWidth: 50,
                     duration: 0.25
                 }
             },

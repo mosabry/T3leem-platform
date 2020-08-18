@@ -15,6 +15,10 @@ header {
     @media all and (max-width: 991px) {
         background-color: rgba(104, 176, 171, 0.801);
     }
+    
+    @media all and (max-width: 768px) {
+        background-color: rgba(104, 176, 171, 1);
+    }
 
     .logo {
         width: 70px;
