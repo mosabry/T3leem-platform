@@ -1,0 +1,6 @@
+.noskew-footer {
+    &::before {
+        content: "";
+        display: none;
+    }
+}

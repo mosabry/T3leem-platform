@@ -1,0 +1,46 @@
+.experience {
+    background: linear-gradient(to right, #141e30, #243b55);
+    height: 100% !important;
+
+    &::before, &::after {
+        content: "";
+        display: none;
+    }
+}
+
+.experience-flex {
+    flex-direction: column;
+
+    .about-experience {
+        align-items: center;
+        justify-content: space-around;
+        color: #fff;
+    }
+
+    .about-info {
+        color: #fff;
+
+        .about-info-box {
+            box-shadow: none;
+
+            @media all and (max-width: 768px){
+                width: 100px;
+            }
+
+            h3 {
+                @media all and (max-width: 768px) {
+                    font-size: 1rem;
+                }
+            }
+
+            p {
+                color: #fff;
+
+                @media all and (max-width: 768px) {
+                    font-size: 0.80rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

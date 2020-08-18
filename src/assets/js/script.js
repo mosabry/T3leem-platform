@@ -63,6 +63,6 @@ $(window).scroll(function () {
     });
 });
 
-if ($(window).width() < 700) {
+if ($(window).width() < 768) {
     $('header').removeClass('zoom')
 }
