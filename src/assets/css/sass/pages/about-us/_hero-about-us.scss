@@ -10,7 +10,10 @@
 
 .hero-text {
     padding-top: 50px;
-    color: aliceblue;
+
+    @media all and (max-width: 768px) {
+        color: aliceblue;
+    }
 
     h2 {
         @media all and (max-width: 768px) {
