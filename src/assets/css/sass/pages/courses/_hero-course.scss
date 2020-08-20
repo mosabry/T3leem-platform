@@ -11,7 +11,7 @@
 }
 
 .nav-course {
-    background-color: rgba(0, 0, 0, 0.3);
+    // background-color: rgba(0, 0, 0, 0.3);
 }
 
 .sign-course {
@@ -34,7 +34,7 @@
 
     @media all and (max-width: 991px) {
         .hero-text {
-            color: #fff;
+            color: #000;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -43,7 +43,7 @@
 
             .hero-buttons {
                 a {
-                    color: #fff;
+                    color: #000;
                 }
             }
         }

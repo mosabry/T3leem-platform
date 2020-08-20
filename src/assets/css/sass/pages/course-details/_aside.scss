@@ -1,0 +1,142 @@
+.course-details {
+    padding: 100px 0;
+    height: 100%;
+}
+
+.aside-info {
+    width: 28%;
+    float: left;
+
+    .wishlist {
+        box-shadow: 0px 0px 10px -1px rgba(213, 197, 197, 0.75);
+        padding: 10px 0;
+        margin-bottom: 20px;
+
+        a {
+            padding: 10px 0;
+        }
+    }
+
+    .aside-card {
+        position: relative;
+        box-shadow: 0px 0px 10px -1px rgba(213, 197, 197, 0.75);
+        margin-bottom: 20px;
+
+        .intro-video {
+            position: relative;
+            width: auto;
+            overflow: hidden;
+
+            .img {
+                width: 250pxpx;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+
+                i {
+                    font-size: 20px;
+                    background-color: #f6425f;
+                    color: #fff;
+                    border-radius: 50%;
+                    padding: 22px;
+                }
+            }
+            
+
+            .modal-dialog {
+                max-width: 800px;
+                margin: 30px auto;
+            }
+
+
+
+            .modal-body {
+                position: relative;
+                padding: 0px;
+            }
+
+            .close {
+                position: absolute;
+                right: -30px;
+                top: 0;
+                z-index: 999;
+                font-size: 2rem;
+                font-weight: normal;
+                color: #fff;
+                opacity: 1;
+            }
+        }
+
+        h4 {
+            text-align: center;
+            padding: 10px 0;
+            color: #fff;
+            background: linear-gradient(230deg, rgba(63, 73, 181, 1) 35%, rgba(106, 112, 194, 1) 100%);
+        }
+
+        .belling-details {
+            padding: 10px 20px;
+
+            .price-box {
+
+                .price {
+                    font-weight: 700;
+                }
+                
+                .value {
+                    color: rgb(60,183,174);
+                    font-size: 2.2rem;
+                }
+
+                .discount {
+                    color: grey;
+                    text-decoration: line-through;
+                }
+
+                .price, .discount {
+                    font-size: 1.1rem;
+                }
+            }
+
+            i {
+                color: rgb(60,183,174);
+            }
+        }
+
+        .instructor-details {
+            padding: 10px 20px;
+
+            img {
+                width: 100px;
+                margin-left: 5px;
+            }
+
+            .social-icons {
+                padding: 0;
+            }
+        }
+
+        .courses-details {
+            padding: 10px 20px;
+            display: block;
+
+            .course {
+                height: auto;
+
+                img {
+                    width: 100px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

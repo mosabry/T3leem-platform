@@ -1,0 +1,85 @@
+/* Accordion */
+[data-toggle="collapse"] i:before {
+    content: "\f068";
+}
+
+[data-toggle="collapse"].collapsed i:before {
+    content: "\f067";
+}
+
+#accordion {
+    .card-header {
+        margin-bottom: 8px;
+    }
+
+    .accordion-title {
+        position: relative;
+        display: block;
+        padding: 8px 10px 8px 50px;
+        background: #F6425F;
+        overflow: hidden;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        width: 100%;
+        text-align: right;
+        transition: all .4s ease-in-out;
+
+        i {
+            position: absolute;
+            width: 40px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            color: #fff;
+            background: radial-gradient(rgba(#213744, .8), #213744);
+            text-align: center;
+            border-right: 1px solid transparent;
+        }
+
+        &:hover {
+            padding-left: 60px;
+            background: #ca2d47;
+            color: #fff;
+
+            i {
+                border-right: 1px solid #fff;
+                background: radial-gradient(rgba(#F6425F, .8), #F6425F);
+            }
+        }
+    }
+
+    .accordion-body {
+        padding: 40px 55px;
+
+
+        ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        li {
+            padding-left: 1.2rem;
+            text-indent: -1.2rem;
+
+            &:before {
+                content: "\f10a";
+                padding-right: 5px;
+                font-family: "Flaticon";
+                font-size: 16px;
+                font-style: normal;
+                color: #213744;
+            }
+        }
+
+        .lesson {
+            .lesson-text {
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

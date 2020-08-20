@@ -8,16 +8,20 @@ header {
     padding-bottom: 70px;
 }
 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler {
+    border-color: rgb(255, 102, 203) !important;
+}
+
 .navbar {
     background-color: transparent;
     z-index: 999;
 
     @media all and (max-width: 991px) {
-        background-color: rgba(104, 176, 171, 0.801);
-    }
-    
-    @media all and (max-width: 768px) {
-        background-color: rgba(104, 176, 171, 1);
+        background: linear-gradient(rgb(104, 113, 204), rgb(71, 82, 198));
     }
 
     .logo {

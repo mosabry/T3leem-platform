@@ -2,8 +2,28 @@
 @import "./sass/base";
 
 @import "./sass/components/navbar";
+
+/* Main Page */
 @import "./sass/pages/main/hero-main";
 @import "./sass/pages/main/about-us";
 @import "./sass/pages/popular";
 @import "./sass/pages/main/category";
+
+/* Courses Page */
+@import "./sass/pages/courses/hero-course";
+@import "./sass/pages/courses/category";
+
+/* About-Us Page */
+@import "./sass/pages/about-us/hero-about-us";
+@import "./sass/pages/about-us/quality";
+@import "./sass/pages/about-us/experience";
+@import "./sass/pages/about-us/people";
+@import "./sass/pages/about-us/footer";
+
+/* Course Details Page */
+@import "./sass/pages/course-details/hero";
+@import "./sass/pages/course-details/aside";
+@import "./sass/pages/course-details/main";
+@import "./sass/pages/course-details/accordion";
+
 @import "./sass/layouts/footer";

@@ -1,0 +1,51 @@
+.main-info {
+    width: 62%;
+    float: right;
+
+    .img {
+        width: 100%;
+        box-shadow: 0px 0px 10px -1px rgba(213, 197, 197, 0.75);
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .main-details {
+        box-shadow: 0px 0px 10px -1px rgba(213, 197, 197, 0.75);
+
+        .tab-content {
+            padding: 20px 25px;
+
+            i {
+                color: rgb(60,183,174);
+            }
+        }
+    }
+}
+
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+
+    .modal-body {
+        position: relative;
+        padding: 0px;
+    }
+    
+    .close {
+        position: absolute;
+        right: -30px;
+        top: 0;
+        z-index: 999;
+        font-size: 2rem;
+        font-weight: normal;
+        color: #fff;
+        opacity: 1;
+    }
+}
+

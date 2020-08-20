@@ -40,6 +40,11 @@
         height: 150px;
         bottom: -82px;
 
+        @media all and (min-width: 1921px) {
+            content: "";
+            display: none;
+        }
+
         @media all and (max-width: 768px) {
             bottom: -102px;
         }
@@ -122,6 +127,10 @@
         p {
             font-size: 1.07rem;
             color: grey;
+
+            @media all and (max-width: 320px) {
+                font-size: 0.7rem;
+            }
         }
 
         &:hover {
