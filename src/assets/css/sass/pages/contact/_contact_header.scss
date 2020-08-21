@@ -1,0 +1,33 @@
+.header-contact {
+    background-image: linear-gradient(rgba(89, 99, 188, .9), rgba(89, 99, 188, .7)), url(../img/hero/hero-contact.jpg) !important;
+    background-color: rgba(89, 99, 188, .3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: unset;
+    height: 60vh;
+    position: relative;
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media all and (max-width: 768px) {
+            color: aliceblue;
+        }
+
+        h2 {
+            color: #fff;
+
+            @media all and (max-width: 768px) {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .nav-link {
+        color: #fff !important;
+    }
+}

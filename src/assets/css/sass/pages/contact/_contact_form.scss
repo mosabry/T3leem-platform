@@ -1,0 +1,121 @@
+.contact-section {
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    .contact-us {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        border: 1px solid #000;
+        border-radius: 10px;
+        padding: 60px 30px;
+        box-shadow: 1px 1px 30px -3px #000;
+        background-color: #fff;
+        transition: box-shadow .3s ease-in;
+
+        @media all and (max-width: 991px) {
+            width: 60%;
+        }
+
+        @media all and (max-width: 768px) {
+            width: 90%;
+        }
+
+        @media all and (max-width: 480px) {
+            padding: 15px;
+        }
+
+        &:hover {
+            box-shadow: 1px 1px 60px -3px #000;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                text-transform: uppercase;
+                margin-bottom: 7px;
+                margin-top: 25px;
+                color: $f1-color;
+                font-weight: 700;
+                font-size: 18px;
+
+                @media all and (max-width: 480px) {
+                    margin-bottom: 4px;
+                    margin-top: 15px;
+                    font-size: 16px;
+                }
+            }
+
+            input {
+                padding: 7px 10px;
+                border: 1px solid #999;
+                border-radius: 15px;
+                font-size: 17px;
+                color: #999;
+
+                &:focus {
+                    outline: none;
+                    box-shadow: 1px 1px 15px -3px #999;
+                    border-color: $f2-color;
+                }
+            }
+
+            textarea {
+                padding: 7px 10px;
+                border: 1px solid #999;
+                border-radius: 15px;
+                font-size: 17px;
+                color: #999;
+                resize: none;
+
+                &:focus {
+                    outline: none;
+                    box-shadow: 1px 1px 15px -3px #999;
+                    border-color: $f2-color;
+                }
+            }
+
+            button {
+                font-size: 18px;
+                color: #fff;
+                padding: 10px;
+                margin-top: 35px;
+                border: 2px solid $f1-color;
+                background-color: $button1;
+                width: 150px;
+                cursor: pointer;
+                transition: all .3s ease;
+
+                @media all and (max-width: 480px) {
+                    margin-top: 20px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                &:hover {
+                    background: linear-gradient(rgb(104, 113, 204), rgb(71, 82, 198));
+                    border-radius: 10px;
+                    color: #fff;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 27px;
+            text-transform: uppercase;
+            color: $f1-color;
+        }
+
+        p {
+            color: #999;
+            margin-top: 10px;
+
+            @media all and (max-width: 480px) {
+                font-size: 15px;
+            }
+        }
+    }
+}
