@@ -66,12 +66,9 @@
 .course-card {
     box-shadow: 0px 0px 10px -1px rgba(213, 197, 197, 0.75);
     background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin: 5px;
-    width: 330px;
+    width: 28%;
     border-radius: 3px;
     overflow: hidden;
 
@@ -82,13 +79,6 @@
     }
 
     .course-bottom {
-        >div {
-            display: flex;
-            justify-content: space-between;
-            padding: 5px;
-            margin: 5px;
-        }
-
         .tag {
             display: inline-block;
             text-align: center;
@@ -114,6 +104,10 @@
                 &:last-child {
                     transform: rotateY(180deg);
                 }
+            }
+
+            +h5 {
+                font-size: 1rem;
             }
         }
     }
