@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="theme-color" content="#563d7c">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+        integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <title>Checkout example · Bootstrap</title>
+</head>
+
+<body class="bg-light">
+    <!-- Header -->
+    <header class="checkout-header">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/img/logo.png" loading="lazy" alt="" class="logo">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center text-md-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">الرئيسية <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./courses.html">الكورسات</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./about-us.html">من نحن؟</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">اتصل بنا</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 d-flex justify-content-center">
+                        <input class="form-control mr-sm-2" type="search" placeholder="ابحث عن كورس ..."
+                            aria-label="Search">
+                        <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <div class="sign d-flex justify-content-center">
+                        <a href="#" class="sign-in btn my-2 my-sm-0">الدخول</a>
+                        <a href="#" class="sign-up btn my-2 my-sm-0">الاشتراك</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="title-hero text-center">
+                <h2>الدفع</h2>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="container">
+        <div class="form-section row">
+            <div class="col-md-4 order-md-2 mb-4">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">المشتريات</span>
+                    <span class="badge badge-secondary badge-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="my-0">اسم المنتج</h6>
+                            <small class="text-muted">وصف المنتج</small>
+                        </div>
+                        <span class="text-muted">$12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="my-0">المنتج الثاني</h6>
+                            <small class="text-muted">وصف المنتج</small>
+                        </div>
+                        <span class="text-muted">$8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-condensed">
+                        <div>
+                            <h6 class="my-0">المنتج الثالث</h6>
+                            <small class="text-muted">وصف مختصر</small>
+                        </div>
+                        <span class="text-muted">$5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                        <div class="text-success">
+                            <h6 class="my-0">كوبون</h6>
+                            <small>EXAMPLECODE</small>
+                        </div>
+                        <span class="text-success">-$5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>الكلي (USD)</span>
+                        <strong>$20</strong>
+                    </li>
+                </ul>
+
+                <form class="card p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="كوبون">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-secondary">تطبيق</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8 order-md-1">
+                <h4 class="mb-3">التفاصيل</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">الاسم الاول</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                الاسم الاول مطلوب.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">الاسم الاخير</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                الاسم الاخير مطلوب.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="mb-3">
+                        <label for="username">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="username" placeholder="Username" required>
+                            <div class="invalid-feedback" style="width: 100%;">
+                                Your username is required.
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="mb-3">
+                        <label for="email">البريد الالكتروني <span class="text-muted">(اختياري)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                            من فضلك ادخل البريد الالكتروني الصحيح.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address">العنوان</label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                        <div class="invalid-feedback">
+                            من فضلك ادخل عنوانك.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address2">العنوان 2 <span class="text-muted">(اختياري)</span></label>
+                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="country">الدولة</label>
+                            <select class="custom-select d-block w-100" id="country" required>
+                                <option value="">اختار...</option>
+                                <option>مصر</option>
+                                <option>الامارات</option>
+                                <option>اخرى...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                من فضلك اختار البلد بشكل صحيح.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="state">المحافظة او الامارة</label>
+                            <select class="custom-select d-block w-100" id="state" required>
+                                <option value="">اختار...</option>
+                                <option>الاسكندرية</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                من فضلك اختار بشكل صحيح.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="zip">الرمز البريدي</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="same-address">
+                        <label class="custom-control-label" for="same-address">عنوان الشحن هو عنوان الدفع</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="save-info">
+                        <label class="custom-control-label" for="save-info">حفظ المعلومات للمرة القادمة</label>
+                    </div>
+                    <hr class="mb-4">
+
+                    <h4 class="mb-3">طريقة الدفع</h4>
+
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked
+                                required>
+                            <label class="custom-control-label" for="credit">Credit card</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="debit">Debit card</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="paypal">PayPal</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-name">الاسم على بطاقة الدفع</label>
+                            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                            <small class="text-muted">الاسم الكامل على بطاقة الدفع</small>
+                            <div class="invalid-feedback">
+                                الاسم على البطاقة مطلوب
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="cc-number">رقم بطاقة الدفع</label>
+                            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                            <div class="invalid-feedback">
+                                رقم بطاقة الدفع
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-expiration">تاريخ انتهاء البطاقة</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                            <div class="invalid-feedback">
+                                تاريخ الانتهاء مطلوب
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="cc-cvv">CVV</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                            <div class="invalid-feedback">
+                                كود الحماية مطلوب
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">الدفع</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="noskew-footer">
+        <div class="container" id="footer-content">
+            <div class="row text-lg-left text-center">
+                <div class="col-md mb-2">
+                    <h1>لارنا</h1>
+                    <p>
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج. <br> لوريم ايبسوم دولار سيت أميت
+                        ,كونسيكتيتور أدايبا يسكينج <br>
+                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج. <br> لوريم ايبسوم دولار سيت أميت
+                        ,كونسيكتيتور أدايبا يسكينج
+                    </p>
+                </div>
+                <div class="col-md mb-2">
+                    <a href="#">
+                        <h1>روابط هامة</h1>
+                    </a>
+                    <div class="row">
+                        <div class="col-md">
+                            <a href="#">
+                                <p>جميع المواد</p>
+                            </a>
+                            <a href="#">
+                                <p>المدربون</p>
+                            </a>
+                            <a href="#">
+                                <p>خطط متيزة</p>
+                            </a>
+                            <a href="#">
+                                <p>المدونة</p>
+                            </a>
+                            <a href="#">
+                                <p>المصادر</p>
+                            </a>
+                        </div>
+                        <div class="col-md">
+                            <a href="#">
+                                <p>عننا</p>
+                            </a>
+                            <a href="#">
+                                <p>الوظائف</p>
+                            </a>
+                            <a href="#">
+                                <p>المساعدة</p>
+                            </a>
+                            <a href="#">
+                                <p>الشهادة</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md mb-2">
+                    <a href="#">
+                        <h1>تواصل معنا</h1>
+                    </a>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container copyright">
+            <span>الحقوق محفوظة - لارنا &copy; 2020</span>
+            <ul>
+                <li><a href="#">الشروط والاحكام</a></li>
+                <li><a href="#">الخصوصية</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"
+        integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/checkout-validation.js"></script>
+</body>
+
+</html>

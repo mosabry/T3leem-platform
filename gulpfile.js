@@ -37,7 +37,6 @@ gulp.task("css", () => {
 gulp.task("js", () => {
     return gulp
         .src("src/assets/js/*.js")
-        .pipe(concat("main.js"))
         .pipe(uglify())
         .pipe(gulp.dest("./dist/assets/js"))
         .pipe(livereload());
