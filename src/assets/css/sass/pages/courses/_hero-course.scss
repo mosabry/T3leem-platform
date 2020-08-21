@@ -32,18 +32,24 @@
         align-items: center;
     }
 
-    @media all and (max-width: 991px) {
-        .hero-text {
-            color: #000;
+    .hero-text {
+        color: #000;
+
+        @media all and (max-width: 991px) {
+            color: #fff;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
+        }
 
-            .hero-buttons {
-                a {
-                    color: #000;
+        .hero-buttons {
+            a {
+                color: #000;
+
+                @media all and (max-width: 991px) {
+                    color: #fff;
                 }
             }
         }

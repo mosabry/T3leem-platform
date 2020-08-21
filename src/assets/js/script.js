@@ -75,7 +75,7 @@ $(window).scroll(function () {
 });
 
 /* Config Zoom on small device */
-if ($(window).width() < 768) {
+if ($(window).width() < 1000) {
     $("header").removeClass("zoom");
 }
 
