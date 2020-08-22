@@ -2,9 +2,19 @@
     width: 62%;
     float: right;
 
+    @media all and (max-width: 890px) {
+        float: none;
+        width: 90%;
+        margin: auto;
+    }
+
     .img {
         width: 100%;
         box-shadow: 0px 0px 10px -1px rgba(213, 197, 197, 0.75);
+
+        @media all and (max-width: 890px) {
+            display: none;
+        }
 
         img {
             max-width: 100%;
