@@ -1,0 +1,236 @@
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+        integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Side Menu Bar CSS</title>
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        #wrapper {
+            padding-right: 0;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        #wrapper.toggled {
+            padding-right: 250px;
+        }
+
+        #sidebar-wrapper {
+            z-index: 1000;
+            position: fixed;
+            right: 250px;
+            width: 0;
+            height: 100%;
+            margin-right: -250px;
+            overflow-y: auto;
+            background: #000;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+
+        #wrapper.toggled #sidebar-wrapper {
+            width: 250px;
+        }
+
+        #page-content-wrapper {
+            width: 100%;
+            position: absolute;
+            padding: 15px;
+        }
+
+        #wrapper.toggled #page-content-wrapper {
+            position: absolute;
+            margin-left: -250px;
+        }
+
+
+        /* Sidebar Styles */
+
+        .sidebar-nav {
+            position: absolute;
+            top: 0;
+            width: 250px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .sidebar-nav li {
+            text-indent: 20px;
+            line-height: 40px;
+        }
+
+        .sidebar-nav li a {
+            display: block;
+            text-decoration: none;
+            color: #999999;
+        }
+
+        .sidebar-nav li a:hover {
+            text-decoration: none;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .sidebar-nav li a:active,
+        .sidebar-nav li a:focus {
+            text-decoration: none;
+        }
+
+        .sidebar-nav>.sidebar-brand {
+            height: 65px;
+            font-size: 18px;
+            line-height: 60px;
+        }
+
+        .sidebar-nav>.sidebar-brand a {
+            color: #999999;
+        }
+
+        .sidebar-nav>.sidebar-brand a:hover {
+            color: #fff;
+            background: none;
+        }
+
+        @media(min-width:768px) {
+            #wrapper {
+                padding-right: 0;
+            }
+
+            #wrapper.toggled {
+                padding-right: 250px;
+            }
+
+            #sidebar-wrapper {
+                width: 0;
+            }
+
+            #wrapper.toggled #sidebar-wrapper {
+                width: 250px;
+            }
+
+            #page-content-wrapper {
+                padding: 20px;
+                position: relative;
+            }
+
+            #wrapper.toggled #page-content-wrapper {
+                position: relative;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="container">
+                <div class="text-center p-3">
+                    <a class="logo" href="./index.html" title="logo">
+                        <img src="./assets/img/logo.png" loading="lazy" alt="" class="logo">
+                    </a>
+                    <small><a href="./index.html">الرئيسية</a></small>
+                </div>
+                <hr>
+                <div id="accordion">
+                    <!-- 1 -->
+                    <div class="card border-0">
+                        <div class="card-header p-0 border-0" id="heading-239">
+                            <button class="btn btn-link accordion-title border-0 collapse" data-toggle="collapse"
+                                data-target="#collapse-239" aria-expanded="true" aria-controls="#collapse-239"><i
+                                    class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>الشابتر
+                                الاول</button>
+                        </div>
+                        <div id="collapse-239" class="collapse show" aria-labelledby="heading-239"
+                            data-parent="#accordion">
+                            <div class="card-body accordion-body d-flex flex-column">
+                                <a href="#">الدرس الاول</a>
+                                <a href="#">الدرس التاني</a>
+                                <a href="#">الدرس التالت</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="card border-0 wow fadeInUp animate__animated animate__fadeInUp"
+                        style="visibility: visible; animation-name: fadeInUp;">
+                        <div class="card-header p-0 border-0" id="heading-240">
+                            <button class="btn btn-link accordion-title border-0 collapsed" data-toggle="collapse"
+                                data-target="#collapse-240" aria-expanded="false" aria-controls="#collapse-240"><i
+                                    class="fas fa-minus text-center d-flex align-items-center justify-content-center h-100"></i>شابتر
+                                2</button>
+                        </div>
+                        <div id="collapse-240" class="collapse " aria-labelledby="heading-240" data-parent="#accordion">
+                            <div class="card-body accordion-body d-flex flex-column">
+                                <a href="#">الدرس الاول</a>
+                                <a href="#">الدرس التاني</a>
+                                <a href="#">الدرس التالت</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="toggle-header clearfix">
+                    <a href="#menu-toggle" class="btn btn-danger" id="menu-toggle">غلق/فتح القائمة</a>
+                </div>
+
+                <div class="container py-5">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+
+                        <!--###### Change iframe with the local videos ######-->
+                        <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/IyR_uYsRdPs"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <!-- Articles Should be Added here -->
+                    <div class="container py-5">
+                        <p>الوصف</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"
+            integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k"
+            crossorigin="anonymous"></script>
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>
