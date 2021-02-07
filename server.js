@@ -1,5 +1,5 @@
-const staticServer = require("static-server");
-var server = new staticServer({
+const StaticServer = require("static-server");
+const server = new StaticServer({
     rootPath: "./dist/",
     port: 8888,
 });

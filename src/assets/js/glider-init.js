@@ -6,6 +6,7 @@ window.addEventListener("load", function () {
         draggable: true,
         dots: ".dots",
         duration: 0.25,
+        // direction: 'rtl',
         responsive: [
             {
                 // screens greater than >= 120px

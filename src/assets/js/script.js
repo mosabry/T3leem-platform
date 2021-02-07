@@ -10,8 +10,8 @@ $(window).scroll(function () {
         top: -(scroll / 10) + "%",
 
         //Blur suggestion from @janwagner: https://codepen.io/janwagner/ in comments
-        //"-webkit-filter": "blur(" + (scroll/200) + "px)",
-        //filter: "blur(" + (scroll/200) + "px)"
+        "-webkit-filter": "blur(" + (scroll/200) + "px)",
+        filter: "blur(" + (scroll/200) + "px)"
     });
 });
 
