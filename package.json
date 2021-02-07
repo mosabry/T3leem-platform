@@ -1,8 +1,8 @@
 {
-  "name": "larna",
+  "name": "t3leem",
   "version": "1.0.0",
   "description": "Education Platform",
-  "main": "index.js",
+  "main": "dist/index.html",
   "scripts": {
     "run": "gulp watch"
   },
