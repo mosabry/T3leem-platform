@@ -3,4 +3,5 @@ dist
 compressed
 package-lock.json
 .vscode
+.idea
 *.zip
